@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+       <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Document</title>
+        </head>
+        <body>
+            <div id="output" >DOM document object model</div>
+            <p><input type="text" id="newtext" onchange="upText()"></p>
+            <script>
+                var output=document.getElementById('output');
+                function upText(){
+                    output.innerText=document.getElementById("newtext").value;
+                }
+                
+            </script>
+        </body>
+        </html>
+       
